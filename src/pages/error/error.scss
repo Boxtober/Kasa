@@ -1,0 +1,29 @@
+@import "../../index.scss";
+
+.error-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    padding: 6rem 0;
+    gap: 6rem;
+
+    .error-404 {
+        color: $red;
+        text-align: center;
+        font-size: 288px;
+        font-weight: 700;
+    }
+
+    .error-txt {
+        color: $red;
+        font-size: 36px;
+    }
+
+    .error-link {
+        font-size: 18px;
+
+        color: $black;
+        text-decoration: underline;
+    }
+}

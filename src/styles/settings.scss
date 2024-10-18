@@ -13,6 +13,8 @@ $grey: #F6F6F6;
 }
 
 body {
+    color: $black;
+    font-weight: 500;
     background: $white;
     font-family: "Montserrat", sans-serif;
 }
@@ -44,9 +46,13 @@ li {
 }
 
 .dropdown-container {
-    display: flex;
-    flex-direction: row;
+    // display: flex;
+    // flex-direction: row;
     gap: 2rem;
+
+    display: grid;
+    justify-items: stretch;
+    grid-template-columns: repeat(2, 50%);
 }
 
 
@@ -57,7 +63,7 @@ li {
 //     align-items: flex-end;
 //     gap: 10px;
 //     padding: 0px 39px;
-// }
+// }     
 
 // #root>div>div.footer>h2>a {
 //     margin-top: 30px;
