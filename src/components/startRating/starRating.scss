@@ -1,0 +1,17 @@
+@import "/src/index.scss";
+
+.star-rating {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.fa-star {
+    font-size: 24px;
+    color: $grey;
+    margin-right: 5px;
+}
+
+.fa-star.filled {
+    color: $red;
+}

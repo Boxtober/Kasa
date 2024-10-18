@@ -1,5 +1,6 @@
 @import "settings";
-@import "./components/navbar";
-@import "./components/banner";
-@import "./components/card";
-@import "./components/footer";
+@import "../components/banner/banner.scss";
+@import "../components/cards/card.scss";
+@import "../components/dropdown/dropdown.scss";
+@import "../components/footer/footer.scss";
+@import "../components/navbar/navbar.scss";

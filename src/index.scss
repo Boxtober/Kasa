@@ -1,2 +1,23 @@
 @import "./styles/settings";
-@import "./styles/components/navbar";
+
+.rental-banner {
+    max-height: 415px;
+    border-radius: 25px;
+    object-fit: cover;
+}
+
+h1 {
+    color: $red;
+    font-size: 36px;
+    font-weight: 500;
+}
+
+.tags {
+    color: $white;
+    text-align: center;
+    font-size: 14px;
+    font-weight: 700;
+    padding: 1rem;
+    background: $red;
+    border-radius: 6rem;
+}
