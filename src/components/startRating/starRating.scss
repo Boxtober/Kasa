@@ -2,16 +2,23 @@
 
 .star-rating {
     display: flex;
-    justify-content: flex-start;
+    justify-content: flex-end;
     align-items: center;
 }
 
 .fa-star {
     font-size: 24px;
-    color: $grey;
+    color: #E3E3E3;
     margin-right: 5px;
 }
 
 .fa-star.filled {
     color: $red;
+}
+
+
+@media screen and (max-width: 650px) {
+    .fa-star {
+        font-size: 13px;
+    }
 }

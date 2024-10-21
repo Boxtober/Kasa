@@ -1,23 +1,38 @@
-//@import "../../styles/settings.scss"
 @import "../../index.scss";
 
 .info-rental-container {
     display: flex;
     flex-direction: row;
-    align-items: center;
     justify-content: space-between;
+    align-items: flex-start;
+
+    h1 {
+        color: $red;
+        font-size: 36px;
+        font-weight: 500;
+    }
+
+    .rating-and-host {
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+        align-items: flex-end;
+    }
+
+
 
     .title-container {
         display: flex;
         flex-direction: column;
         color: $black;
+        justify-content: space-between;
+        gap: .5rem;
 
         h2 {
             font-size: 18px;
             font-weight: 500;
         }
     }
-
 
     .host-container {
         display: flex;
@@ -27,6 +42,10 @@
         color: $red;
         font-size: 18px;
         font-weight: 500;
+
+        p {
+            width: min-content;
+        }
 
         .host-img {
             width: 64px;
@@ -60,3 +79,108 @@
         }
     }
 }
+
+@media screen and (max-width: 650px) {
+
+    .info-rental-container {
+
+        display: flex;
+        flex-direction: column;
+
+        h1 {
+            font-size: 18px;
+        }
+
+        h2 {
+            font-size: 14px;
+        }
+
+        .host-container {
+            font-size: 12px;
+
+        }
+
+        .tags-container>.tag {
+            font-size: 10px;
+        }
+
+        .rating-and-host {
+            width: 100%;
+            display: flex;
+            flex-direction: row-reverse;
+            align-items: center;
+            justify-content: space-between;
+
+        }
+    }
+
+    .dropdown-container {
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+
+
+// @import "../../index.scss";
+
+// .info-rental-container {
+//     display: flex;
+//     flex-direction: row;
+//     align-items: center;
+//     justify-content: space-between;
+
+//     .title-container {
+//         display: flex;
+//         flex-direction: column;
+//         color: $black;
+
+//         h2 {
+//             font-size: 18px;
+//             font-weight: 500;
+//         }
+//     }
+
+//     .host-container {
+//         display: flex;
+//         flex-direction: row;
+//         align-items: center;
+//         gap: 1rem;
+//         color: $red;
+//         font-size: 18px;
+//         font-weight: 500;
+
+//         .host-img {
+//             width: 64px;
+//             height: 64px;
+//             object-fit: cover;
+//             border-radius: 6rem;
+//         }
+
+//     }
+
+//     .rental-banner {
+//         max-height: 415px;
+//         border-radius: 25px;
+//         object-fit: cover;
+//     }
+
+//     .tags-container {
+//         display: flex;
+//         flex-direction: row;
+//         align-items: center;
+//         gap: 1rem;
+
+//         .tag {
+//             color: $white;
+//             text-align: center;
+//             font-size: 14px;
+//             font-weight: 700;
+//             padding: .3rem 1rem;
+//             background: $red;
+//             border-radius: 10px;
+//         }
+//     }
+// }
+
+// @media screen and (max-width: 650px) {}

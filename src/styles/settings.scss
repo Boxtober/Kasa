@@ -30,30 +30,23 @@ li {
     margin: 2rem 4rem;
 }
 
-.cards-container {
-    padding: 3rem;
-    width: 100%;
-    background-color: $grey;
-    border-radius: 1rem;
-}
-
-.home {
-    &__cards {
-        display: grid;
-        grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
-        gap: 20px;
+@media screen and (max-width: 650px) {
+    .main {
+        margin: 1rem 2rem;
+        gap: 22px;
     }
 }
 
-.dropdown-container {
-    // display: flex;
-    // flex-direction: row;
-    gap: 2rem;
 
-    display: grid;
-    justify-items: stretch;
-    grid-template-columns: repeat(2, 50%);
-}
+// .dropdown-container {
+//     // display: flex;
+//     // flex-direction: row;
+//     gap: 2rem;
+
+//     display: grid;
+//     justify-items: stretch;
+//     grid-template-columns: repeat(2, 50%);
+// }
 
 
 
