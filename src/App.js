@@ -7,6 +7,7 @@ import Home from './pages/home/Home';
 import About from './pages/about/About';
 import Error from './pages/error/Error';
 import Rental from './pages/rental/Rental';
+
 function App() {
   return (
     <BrowserRouter>

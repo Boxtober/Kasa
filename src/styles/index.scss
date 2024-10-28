@@ -1,6 +1,37 @@
-@import "settings";
-@import "../components/banner/banner.scss";
-@import "../components/cards/card.scss";
-@import "../components/dropdown/dropdown.scss";
-@import "../components/footer/footer.scss";
-@import "../components/navbar/navbar.scss";
+$red: #FF6060;
+$white: #ffffff;
+$black: #000000;
+$grey: #F6F6F6;
+
+* {
+    font-family: "Montserrat", sans-serif;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+body {
+    color: $black;
+    font-weight: 500;
+    background: $white;
+    font-family: "Montserrat", sans-serif;
+}
+
+li {
+    list-style-type: none;
+}
+
+.main {
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+    margin: 2rem 4rem;
+}
+
+@media screen and (max-width: 650px) {
+    .main {
+        margin: 1rem 2rem;
+        gap: 22px;
+    }
+}

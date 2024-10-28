@@ -4,14 +4,12 @@ import "./carousel.scss";
 const Carousel = ({ pictures }) => {
     const [currentIndex, setCurrentIndex] = useState(0);
 
-    // img suivante
     const handleNext = () => {
         setCurrentIndex((prevIndex) =>
             prevIndex === pictures.length - 1 ? 0 : prevIndex + 1
         );
     };
 
-    // img precedente
     const handlePrev = () => {
         setCurrentIndex((prevIndex) =>
             prevIndex === 0 ? pictures.length - 1 : prevIndex - 1

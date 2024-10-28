@@ -1,4 +1,4 @@
-@import "/src/index.scss";
+@import "../../styles/index.scss";
 
 .navbar {
 
@@ -38,6 +38,7 @@
 
         .nav-active {
             text-decoration-line: underline;
+            text-decoration-color: $black;
         }
     }
 }

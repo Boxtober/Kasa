@@ -1,7 +1,6 @@
-@import "../../index.scss";
+@import "../../styles/index.scss";
 
 .cards-container {
-
     padding: 3rem;
     width: 100%;
     background-color: $grey;
@@ -26,6 +25,5 @@
     .cards-container {
         background: none;
         padding: 0;
-        // margin-bottom: ;
     }
 }

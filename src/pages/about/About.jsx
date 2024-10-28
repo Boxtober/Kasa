@@ -7,7 +7,7 @@ import "./about.scss";
 
 const About = () => {
     return (
-        <div>
+        <div className="page-container">
             <div className="main">
                 <Navbar />
                 <div className="banner">
