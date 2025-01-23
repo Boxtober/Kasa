@@ -30,7 +30,7 @@ const Dropdown = ({ title, content }) => {
                 </svg>
             </div>
             <div className={`dropdown-content ${isOpen ? "open" : ""}`}>
-                <p>{content}</p>
+                {content}
             </div>
         </div>
     );
