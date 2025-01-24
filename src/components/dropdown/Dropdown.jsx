@@ -11,7 +11,7 @@ const Dropdown = ({ title, content }) => {
 
     return (
         <div className={`dropdown ${isOpen ? "open" : ""}`}>
-            <div className="dropdown-toggle">
+            <div className={`dropdown-toggle ${isOpen ? "open" : ""}`}>
                 <h3>{title}</h3>
 
                 <svg
@@ -37,7 +37,7 @@ const Dropdown = ({ title, content }) => {
 };
 
 Dropdown.propTypes = {
-    title: PropTypes.string.isRequired, // Validation des props
+    title: PropTypes.string.isRequired,
     content: PropTypes.node.isRequired,
 };
 
